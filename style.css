@@ -20,7 +20,6 @@
   --max-width: 1200px;
 }
 
-/* Reset ligero */
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
@@ -46,8 +45,6 @@ body{
 .rounded{border-radius:var(--radius)}
 .shadow{box-shadow:var(--shadow-sm)}
 .cursor-pointer{cursor:pointer}
-
-
 .header{
   position:sticky;top:0;z-index:60;
   backdrop-filter: blur(6px);
@@ -88,8 +85,6 @@ body{
 .hero p{margin:0;color:var(--muted)}
 .cta{display:inline-block;padding:.65rem 1rem;border-radius:12px;background:var(--dark);color:white;text-decoration:none;font-weight:600;transition:transform var(--transition)}
 .cta:hover{transform:translateY(-3px)}
-
-/* Product grid */
 .products{padding:1.2rem 0}
 .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .card{background:var(--surface);border-radius:14px;padding:1rem;border:1px solid rgba(16,24,40,0.03);transition:transform var(--transition),box-shadow var(--transition)}
@@ -152,15 +147,8 @@ body{
   .container{padding:0 0.75rem}
 }
 
-/* Accessibility focus states */
 a:focus,button:focus,input:focus{outline:3px solid rgba(88,166,255,0.12);outline-offset:3px}
-
-/* Micro animations */
 .fade-in{animation:fadeIn .45s var(--transition) both}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-
-/* Tiny helpers for demo mode (sin pagos) */
 .demo-badge{position:fixed;left:16px;bottom:16px;background:rgba(255,214,107,0.95);padding:.45rem .6rem;border-radius:999px;font-weight:700;z-index:90}
-
-/* End of file */
 
