@@ -1,9 +1,3 @@
-/* -----------------------------
-   Cheemsi - style.css
-   Diseño moderno y responsivo para ecommerce "Cheemsi"
-   - Paleta sugerida: amarillo pastel (#FFD66B), azul cielo (#58A6FF), gris oscuro (#222), blanco (#FFF)
-   - Uso: header, grid de productos, tarjetas, carrito modal, formularios, footer
-   -----------------------------*/
 
 :root{
   --bg: #ffffff;
@@ -40,7 +34,6 @@ body{
   font-size:16px;
 }
 
-/* Helper utilities */
 .container{max-width:var(--container);margin:0 auto;padding:0 1rem;width:100%}
 .flex{display:flex}
 .grid{display:grid}
@@ -54,7 +47,7 @@ body{
 .shadow{box-shadow:var(--shadow-sm)}
 .cursor-pointer{cursor:pointer}
 
-/* Header */
+
 .header{
   position:sticky;top:0;z-index:60;
   backdrop-filter: blur(6px);
@@ -88,7 +81,6 @@ body{
 .icon-btn:hover{transform:translateY(-2px)}
 .cart-badge{background:var(--accent);color:white;padding:.18rem .45rem;border-radius:999px;font-size:.75rem;margin-left:-6px;margin-top:-10px}
 
-/* Hero */
 .hero{padding:2.2rem 0}
 .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
 .hero-card{background:linear-gradient(180deg, rgba(255,214,107,0.08), rgba(88,166,255,0.03));padding:1.25rem;border-radius:14px}
@@ -110,18 +102,16 @@ body{
 .price{font-weight:800}
 .tag-new{background:var(--primary);padding:.2rem .45rem;border-radius:999px;font-size:.75rem}
 
-/* Buttons */
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .8rem;border-radius:10px;border:0;cursor:pointer;transition:all var(--transition);font-weight:600}
 .btn-primary{background:var(--dark);color:white}
 .btn-ghost{background:transparent;border:1px solid rgba(16,24,40,0.06)}
 .btn-add{background:linear-gradient(90deg,var(--primary),var(--primary-600));color:var(--dark)}
 .btn:active{transform:translateY(1px)}
 
-/* Product quick actions */
 .product-actions{display:flex;gap:.5rem;margin-top:.6rem}
 .small{font-size:.9rem;padding:.45rem .6rem}
 
-/* Cart drawer / modal */
+
 .cart-drawer{
   position:fixed;right:20px;bottom:20px;z-index:80;
 }
@@ -133,20 +123,17 @@ body{
 .total-row{display:flex;justify-content:space-between;font-weight:800;padding-top:.6rem}
 .checkout-btn{width:100%;margin-top:.6rem}
 
-/* Forms */
 .input{width:100%;padding:.6rem .7rem;border-radius:10px;border:1px solid rgba(16,24,40,0.06);background:white}
 .label{font-size:.85rem;color:var(--muted);margin-bottom:.35rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
 
-/* Footer */
 .footer{padding:2rem 0;border-top:1px solid rgba(16,24,40,0.03);margin-top:2rem}
 .footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .footer p{color:var(--muted);font-size:.95rem}
 
-/* Tiny brand mascot */
 .cheems-badge{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--primary),var(--primary-600));color:var(--dark);font-weight:800}
 
-/* Responsive */
+
 @media (max-width:1100px){
   .product-grid{grid-template-columns:repeat(3,1fr)}
   .hero-grid{grid-template-columns:1fr 340px}
