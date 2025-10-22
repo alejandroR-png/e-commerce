@@ -1,4 +1,3 @@
-
 :root{
   --bg: #ffffff;
   --surface: #F8FAFC; /* card background */
@@ -81,6 +80,17 @@ body{
 .hero{padding:2.2rem 0}
 .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
 .hero-card{background:linear-gradient(180deg, rgba(255,214,107,0.08), rgba(88,166,255,0.03));padding:1.25rem;border-radius:14px}
+
+/* ===== ADDED: Force the hero image to show as an element and cover the card area ===== */
+.hero-card img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-height:380px; /* ajusta según lo que quieras que ocupe la imagen */ 
+  object-fit:cover;
+  border-radius:12px;
+}
+
 .hero h1{font-size:2.1rem;margin:0 0 .35rem}
 .hero p{margin:0;color:var(--muted)}
 .cta{display:inline-block;padding:.65rem 1rem;border-radius:12px;background:var(--dark);color:white;text-decoration:none;font-weight:600;transition:transform var(--transition)}
@@ -106,7 +116,6 @@ body{
 .product-actions{display:flex;gap:.5rem;margin-top:.6rem}
 .small{font-size:.9rem;padding:.45rem .6rem}
 
-
 .cart-drawer{
   position:fixed;right:20px;bottom:20px;z-index:80;
 }
@@ -127,7 +136,6 @@ body{
 .footer p{color:var(--muted);font-size:.95rem}
 
 .cheems-badge{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--primary),var(--primary-600));color:var(--dark);font-weight:800}
-
 
 @media (max-width:1100px){
   .product-grid{grid-template-columns:repeat(3,1fr)}
@@ -151,4 +159,3 @@ a:focus,button:focus,input:focus{outline:3px solid rgba(88,166,255,0.12);outline
 .fade-in{animation:fadeIn .45s var(--transition) both}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .demo-badge{position:fixed;left:16px;bottom:16px;background:rgba(255,214,107,0.95);padding:.45rem .6rem;border-radius:999px;font-weight:700;z-index:90}
-
