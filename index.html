@@ -1,92 +1,76 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cheemsi</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
- <header class="header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo">
-       <img src="logo.png" alt="Logo Cheemsi">
-        </div>
-        <div>
-          <div class="wordmark">Cheemsi</div>
-          <div class="tag">Tu tienda con flow 🐾</div>
-        </div>
-      </div>
+</nav>
 
-      <nav class="nav">
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
-      </nav>
 
-      <div class="header-actions">
-        <button class="icon-btn">🔍</button>
-        <button class="icon-btn">🛒</button>
-      </div>
-    </div>
-  </header>
+<div class="header-actions">
+<button class="icon-btn" aria-label="Buscar">🔍</button>
+<button class="icon-btn" aria-label="Carrito">🛒</button>
+</div>
+</div>
+</header>
 
-  <!-- Hero -->
-  <section class="hero container">
-    <div class="hero-grid">
-      <div>
-        <h1>Bienvenido a Cheemsi</h1>
-        <p>Encuentra lo que buscas en nuestra pagina</p>
-        <a href="#" class="cta mt-2">Ver productos</a>
-      </div>
-      <div class="hero-card">
-        <img src="https://via.placeholder.com/400x300" class="rounded shadow" alt="Hero image">
-      </div>
-    </div>
-  </section>
 
-  <!-- Productos -->
-  <section class="products container">
-    <h2>Nuevos productos 🛍️</h2>
-    <div class="product-grid mt-2">
-      <div class="card fade-in">
-        <img src="https://via.placeholder.com/300x200" class="product-img" alt="">
-        <div class="card-body">
-          <h3 class="product-title">Camiseta Cheemsi</h3>
-          <p class="product-desc">100% algodón premium 🐶</p>
-          <div class="price-row">
-            <span class="price">$59.900</span>
-            <span class="tag-new">Nuevo</span>
-          </div>
-          <div class="product-actions">
-            <button class="btn btn-add small">Agregar 🛒</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Hero -->
+<section class="hero container">
+<div class="hero-grid">
+<div class="hero-text">
+<h1>Bienvenido a Cheemsi</h1>
+<p>Encuentra lo que buscas con estilo y comodidad.</p>
+<a href="#productos" class="cta mt-2">Ver productos</a>
+</div>
+<div class="hero-card">
+<img src="https://via.placeholder.com/400x300" class="rounded shadow" alt="Productos destacados">
+</div>
+</div>
+</section>
 
-  <footer class="footer">
-    <div class="container cols">
-      <div>
-        <h4>Cheemsi</h4>
-        <p>Tu tienda online de ropa</p>
-      </div>
-      <div>
-        <h4>Enlaces</h4>
-        <p><a href="#">Inicio</a></p>
-        <p><a href="#">Productos</a></p>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <p>cheemsi@shop.com</p>
-      </div>
-    </div>
-  </footer>
 
-  <div class="demo-badge">🧪 Modo demo (sin pagos)</div>
-    
-  <script src="index.js"></script>
+<!-- Productos -->
+<section id="productos" class="products container">
+<h2>Nuevos productos 🛍️</h2>
+<div class="product-grid mt-2">
+<div class="card fade-in">
+<img src="https://via.placeholder.com/300x200" class="product-img" alt="Camiseta Cheemsi">
+<div class="card-body">
+<h3 class="product-title">Camiseta Cheemsi</h3>
+<p class="product-desc">100% algodón premium 🐶</p>
+<div class="price-row">
+<span class="price">$59.900</span>
+<span class="tag-new">Nuevo</span>
+</div>
+<div class="product-actions">
+<button class="btn btn-add small">Agregar 🛒</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer" id="contacto">
+<div class="container cols">
+<div>
+<h4>Cheemsi</h4>
+<p>Tu tienda online de ropa con estilo.</p>
+</div>
+<div>
+<h4>Enlaces</h4>
+<p><a href="#">Inicio</a></p>
+<p><a href="#productos">Productos</a></p>
+<p><a href="#contacto">Contacto</a></p>
+</div>
+<div>
+<h4>Contacto</h4>
+<p>cheemsi@shop.com</p>
+</div>
+</div>
+</footer>
+
+
+<div class="demo-badge">🧪 Modo demo (sin pagos)</div>
+
+
+<script src="index.js"></script>
 </body>
 </html>
