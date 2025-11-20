@@ -1,97 +1,70 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheemsi - Tienda Online</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+}
 
-<!-- HEADER -->
-<header class="header">
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">Cheemsi</div>
+.header {
+    background: #3498db;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-            <div class="header-actions">
-                <button class="icon-btn" aria-label="Buscar">🔍</button>
-                <button class="icon-btn" aria-label="Carrito">🛒</button>
-            </div>
-        </nav>
-    </div>
-</header>
+.logo {
+    width: 70px;
+}
 
-<!-- HERO -->
-<section class="hero container">
-    <div class="hero-grid">
-        <div class="hero-text">
-            <h1>Bienvenido a Cheemsi</h1>
-            <p>Encuentra lo que buscas con estilo y comodidad.</p>
-            <a href="#productos" class="cta mt-2">Ver productos</a>
-        </div>
+.hero {
+    margin: 40px 0;
+}
 
-        <div class="hero-card">
-            <img src="https://via.placeholder.com/400x300" alt="Productos destacados">
-        </div>
-    </div>
-</section>
+.productos .grid {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-<!-- PRODUCTOS -->
-<section id="productos" class="products container">
-    <h2>Nuevos productos 🛍️</h2>
+.card {
+    width: 200px;
+    border: 2px solid #3498db;
+    padding: 15px;
+    border-radius: 10px;
+}
 
-    <div class="product-grid mt-2">
-        <div class="card fade-in">
-            <img src="https://via.placeholder.com/300x200" class="product-img" alt="Camiseta Cheemsi">
+.card button {
+    margin-top: 10px;
+    background: #3498db;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
 
-            <div class="card-body">
-                <h3 class="product-title">Camiseta Cheemsi</h3>
-                <p class="product-desc">100% algodón premium 🐶</p>
+.formulario {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-                <div class="price-row">
-                    <span class="price">$59.900</span>
-                    <span class="tag-new">Nuevo</span>
-                </div>
-
-                <div class="product-actions">
-                    <button class="btn btn-add small">Agregar 🛒</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer" id="contacto">
-    <div class="container cols">
-        <div>
-            <h4>Cheemsi</h4>
-            <p>Tu tienda online de ropa con estilo.</p>
-        </div>
-
-        <div>
-            <h4>Enlaces</h4>
-            <p><a href="#">Inicio</a></p>
-            <p><a href="#productos">Productos</a></p>
-            <p><a href="#contacto">Contacto</a></p>
-        </div>
-
-        <div>
-            <h4>Contacto</h4>
-            <p>cheemsi@shop.com</p>
-        </div>
-    </div>
-</footer>
-
-<div class="demo-badge">🧪 Modo demo (sin pagos)</div>
-
-<script src="index.js"></script>
-</body>
-</html>
+.formulario input, .formulario textarea {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
