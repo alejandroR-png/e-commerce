@@ -1,107 +1,57 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheemsi - Tienda Online</title>
+    <title>Cheemsi - Tienda para Mascotas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
-    <div class="container">
-        <nav class="navbar">
-            <a class="logo" href="#">Cheemsi</a>
+    <img src="logo.png" class="logo" alt="Logo Cheemsi">
 
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-
-            <div class="header-actions">
-                <button class="icon-btn" aria-label="Buscar">🔍</button>
-                <button class="icon-btn" aria-label="Carrito de compras">🛒</button>
-            </div>
-        </nav>
-    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="container hero-grid">
-        <div class="hero-text">
-            <h1>Bienvenido a Cheemsi</h1>
-            <p>Encuentra lo que buscas con estilo y comodidad.</p>
-            <a href="#productos" class="cta">Ver productos</a>
-        </div>
-
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/400x300" alt="Productos destacados">
-        </div>
-    </div>
+    <h1>Bienvenido a Cheemsi</h1>
+    <p>Todo para consentir a tu mascota 🐶🐱</p>
 </section>
 
-<!-- PRODUCTOS -->
-<section id="productos" class="products">
-    <div class="container">
-        <h2>Nuevos productos 🛍️</h2>
+<section class="productos">
+    <h2>Productos destacados</h2>
 
-        <div class="product-grid">
-            <!-- PRODUCTO -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200"
-                     alt="Camiseta Cheemsi"
-                     class="product-img">
+    <div class="grid">
 
-                <div class="card-body">
-                    <h3 class="product-title">Camiseta Cheemsi</h3>
-                    <p class="product-desc">100% algodón premium 🐶</p>
-
-                    <div class="price-row">
-                        <span class="price">$59.900</span>
-                        <span class="tag-new">Nuevo</span>
-                    </div>
-
-                    <button class="btn btn-add">Agregar 🛒</button>
-                </div>
-            </div>
-            <!-- /PRODUCTO -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Comida para perros">
+            <h3>Comida Premium</h3>
+            <p>Nutrición completa para perros.</p>
+            <button onclick="agregarCarrito('Comida Premium')">Agregar 🛒</button>
         </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Juguete gato">
+            <h3>Juguete para Gatos</h3>
+            <p>Diversión asegurada.</p>
+            <button onclick="agregarCarrito('Juguete para Gatos')">Agregar 🛒</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Cama para mascotas">
+            <h3>Cama Suave</h3>
+            <p>Comodidad total.</p>
+            <button onclick="agregarCarrito('Cama Suave')">Agregar 🛒</button>
+        </div>
+
     </div>
 </section>
-
-<!-- FOOTER -->
-<footer id="contacto" class="footer">
-    <div class="container footer-grid">
-
-        <div>
-            <h4>Cheemsi</h4>
-            <p>Tu tienda online de ropa con estilo.</p>
-        </div>
-
-        <div>
-            <h4>Enlaces</h4>
-            <ul class="footer-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Contacto</h4>
-            <p>📩 cheemsi@shop.com</p>
-        </div>
-
-    </div>
-</footer>
-
-<!-- MODO DEMO -->
-<div class="demo-badge">🧪 Modo demo (sin pagos)</div>
 
 <script src="index.js"></script>
+
 </body>
 </html>
