@@ -1,4 +1,4 @@
-c<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,14 @@ c<!doctype html>
     <title>Cheemsi - Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <!-- HEADER -->
 <header class="header">
     <div class="container">
         <nav class="navbar">
-            <div class="logo">Cheemsi</div>
+            <a class="logo" href="#">Cheemsi</a>
 
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
@@ -22,55 +23,60 @@ c<!doctype html>
 
             <div class="header-actions">
                 <button class="icon-btn" aria-label="Buscar">🔍</button>
-                <button class="icon-btn" aria-label="Carrito">🛒</button>
+                <button class="icon-btn" aria-label="Carrito de compras">🛒</button>
             </div>
         </nav>
     </div>
 </header>
 
 <!-- HERO -->
-<section class="hero container">
-    <div class="hero-grid">
+<section class="hero">
+    <div class="container hero-grid">
         <div class="hero-text">
             <h1>Bienvenido a Cheemsi</h1>
             <p>Encuentra lo que buscas con estilo y comodidad.</p>
-            <a href="#productos" class="cta mt-2">Ver productos</a>
+            <a href="#productos" class="cta">Ver productos</a>
         </div>
 
-        <div class="hero-card">
+        <div class="hero-image">
             <img src="https://via.placeholder.com/400x300" alt="Productos destacados">
         </div>
     </div>
 </section>
 
 <!-- PRODUCTOS -->
-<section id="productos" class="products container">
-    <h2>Nuevos productos 🛍️</h2>
+<section id="productos" class="products">
+    <div class="container">
+        <h2>Nuevos productos 🛍️</h2>
 
-    <div class="product-grid mt-2">
-        <div class="card fade-in">
-            <img src="https://via.placeholder.com/300x200" class="product-img" alt="Camiseta Cheemsi">
+        <div class="product-grid">
+            <!-- PRODUCTO -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200"
+                     alt="Camiseta Cheemsi"
+                     class="product-img">
 
-            <div class="card-body">
-                <h3 class="product-title">Camiseta Cheemsi</h3>
-                <p class="product-desc">100% algodón premium 🐶</p>
+                <div class="card-body">
+                    <h3 class="product-title">Camiseta Cheemsi</h3>
+                    <p class="product-desc">100% algodón premium 🐶</p>
 
-                <div class="price-row">
-                    <span class="price">$59.900</span>
-                    <span class="tag-new">Nuevo</span>
-                </div>
+                    <div class="price-row">
+                        <span class="price">$59.900</span>
+                        <span class="tag-new">Nuevo</span>
+                    </div>
 
-                <div class="product-actions">
-                    <button class="btn btn-add small">Agregar 🛒</button>
+                    <button class="btn btn-add">Agregar 🛒</button>
                 </div>
             </div>
+            <!-- /PRODUCTO -->
         </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer" id="contacto">
-    <div class="container cols">
+<footer id="contacto" class="footer">
+    <div class="container footer-grid">
+
         <div>
             <h4>Cheemsi</h4>
             <p>Tu tienda online de ropa con estilo.</p>
@@ -78,18 +84,22 @@ c<!doctype html>
 
         <div>
             <h4>Enlaces</h4>
-            <p><a href="#">Inicio</a></p>
-            <p><a href="#productos">Productos</a></p>
-            <p><a href="#contacto">Contacto</a></p>
+            <ul class="footer-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
 
         <div>
             <h4>Contacto</h4>
-            <p>cheemsi@shop.com</p>
+            <p>📩 cheemsi@shop.com</p>
         </div>
+
     </div>
 </footer>
 
+<!-- MODO DEMO -->
 <div class="demo-badge">🧪 Modo demo (sin pagos)</div>
 
 <script src="index.js"></script>
